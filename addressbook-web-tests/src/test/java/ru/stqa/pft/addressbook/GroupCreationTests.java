@@ -72,14 +72,4 @@ public class GroupCreationTests {
         }
     }
 
-    private boolean isAlertPresent() {
-        try {
-            wd.switchTo().alert();
-            return true;
-        } catch (NoAlertPresentException e) {
-            return false;
-        }
-    }
-
-
 }
