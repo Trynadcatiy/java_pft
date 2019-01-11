@@ -69,4 +69,7 @@ public class ContactHelper extends HelperBase {
         acceptAlert();
     }
 
+    public void contactDeletionConfirmed() {
+        messageVisible("Record successful deleted");
+    }
 }

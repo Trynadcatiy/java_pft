@@ -5,6 +5,8 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.testng.Assert.assertTrue;
+
 public class HelperBase {
     protected WebDriver wd;
 
@@ -36,5 +38,9 @@ public class HelperBase {
 
     protected void acceptAlert() {
             wd.switchTo().alert().accept();
+    }
+
+    protected  void messageVisible(final String text) {
+        assertTrue(wd.findElement(By.xpath("//div[@class=\"msgbox\" and .='" + text + "']")).isDisplayed());
     }
 }
