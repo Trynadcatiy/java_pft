@@ -6,7 +6,7 @@ import ru.stqa.pft.addressbook.model.GroupData;
 public class GroupDeletionTests extends TestBase {
 
   @Test
-  public void testGroupDeletion() throws Exception {
+  public void testGroupDeletion() {
     app.getNavigationHelper().gotoGroupPage();
     if (! app.getGroupHelper().isThereAGroup()){
       app.getGroupHelper().createGroup(new GroupData("Test1", null, null));
