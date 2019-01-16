@@ -54,4 +54,8 @@ public class GroupHelper extends HelperBase {
     public boolean isThereAGroup() {
         return isElementPresent(By.name("selected[]"));
     }
+
+    public boolean isThereAGroup(String text) {
+        return isElementPresent(By.xpath("//*[@class='group' and .='" + text + "']/input[@name='selected[]']"));
+    }
 }
