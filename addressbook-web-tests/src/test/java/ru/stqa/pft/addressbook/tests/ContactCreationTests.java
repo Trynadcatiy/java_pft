@@ -15,6 +15,8 @@ public class ContactCreationTests extends TestBase {
                 "1", "January", "1987", "2", "February", "1988", "Test16",
                 "Test17", "Test18", "Test7");
 
+        app.getNavigationHelper().gotoHomePage();
+
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null){
             app.getNavigationHelper().gotoGroupPage();

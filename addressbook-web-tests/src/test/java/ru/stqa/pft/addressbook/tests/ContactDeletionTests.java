@@ -7,6 +7,7 @@ public class ContactDeletionTests extends TestBase {
 
     @Test
     public void testContactDeletion() {
+        app.getNavigationHelper().gotoHomePage();
         if (! app.getContactHelper().isThereAContact()){
             app.getContactHelper().createContact(new ContactData("Pavel", "Petrovich", "Voronin", "Trynadcatiy",
                     "Test", "DXBX", "SPb", "12-34-567", "+79003002000", "+79003002001",
