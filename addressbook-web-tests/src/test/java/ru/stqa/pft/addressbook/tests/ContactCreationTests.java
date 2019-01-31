@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.GroupData;
@@ -16,7 +17,7 @@ public class ContactCreationTests extends TestBase {
                 "Test17", "Test18", "Test7");
 
         app.getNavigationHelper().gotoHomePage();
-
+        int before = app.getContactHelper().getContactCount();
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null){
             app.getNavigationHelper().gotoGroupPage();
@@ -30,6 +31,8 @@ public class ContactCreationTests extends TestBase {
         }
 
         app.getContactHelper().createContact(contact);
+        int after = app.getContactHelper().getContactCount();
+        Assert.assertEquals(after, before + 1);
     }
 
 }
