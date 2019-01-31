@@ -19,7 +19,6 @@ public class ContactCreationTests extends TestBase {
                 "Test17", "Test18", "Test7");
 
         app.getNavigationHelper().gotoHomePage();
-        List<ContactData> before = app.getContactHelper().getContactList();
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null){
             app.getNavigationHelper().gotoGroupPage();
@@ -27,10 +26,10 @@ public class ContactCreationTests extends TestBase {
             if (! app.getGroupHelper().isThereAGroup(contact.getGroup())){
                 // создаем группу с нужным названием, если такой нет
                 app.getGroupHelper().createGroup(new GroupData(contact.getGroup(), null, null));
-                app.getNavigationHelper().gotoHomePage();
             }
-
+            app.getNavigationHelper().gotoHomePage();
         }
+        List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().createContact(contact);
         List<ContactData> after = app.getContactHelper().getContactList();
         Assert.assertEquals(after.size(), before.size() + 1);
