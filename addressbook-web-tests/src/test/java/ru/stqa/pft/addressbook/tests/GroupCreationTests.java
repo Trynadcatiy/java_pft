@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.util.HashSet;
 import java.util.List;
 
 public class GroupCreationTests extends TestBase {
@@ -19,7 +20,7 @@ public class GroupCreationTests extends TestBase {
         Assert.assertEquals(after.size(), before.size() + 1);
 
         before.add(group);
-        Assert.assertEquals(before, after);
+        Assert.assertEquals(new HashSet<>(before), new HashSet<>(after));
     }
 
 }
