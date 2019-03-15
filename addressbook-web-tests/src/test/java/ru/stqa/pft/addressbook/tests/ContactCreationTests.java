@@ -21,10 +21,10 @@ public class ContactCreationTests extends TestBase {
 
         app.getNavigationHelper().gotoHomePage();
         // если не указано название группы - переходим к созданию контакта
-        if (contact.getGroup() != null){
+        if (contact.getGroup() != null) {
             app.getNavigationHelper().gotoGroupPage();
             // проверяем, есть ли группа с нужным названием в справочнике
-            if (! app.getGroupHelper().isThereAGroup(contact.getGroup())){
+            if (!app.getGroupHelper().isThereAGroup(contact.getGroup())) {
                 // создаем группу с нужным названием, если такой нет
                 app.getGroupHelper().createGroup(new GroupData(contact.getGroup(), null, null));
             }
