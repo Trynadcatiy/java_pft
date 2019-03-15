@@ -192,12 +192,6 @@ public class ContactData {
         return group;
     }
 
-    @Override
-    public String toString() {
-        return "ContactData{" +
-                "id=" + id +
-                '}';
-    }
 
     @Override
     public boolean equals(Object o) {
