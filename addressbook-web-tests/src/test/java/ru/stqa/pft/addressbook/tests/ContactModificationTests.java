@@ -12,9 +12,9 @@ public class ContactModificationTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions(){
-        app.goTo().gotoHomePage();
-        if (! app.getContactHelper().isThereAContact()){
-            app.getContactHelper().createContact(new ContactData("Pavel", "Petrovich", "Voronin", "Trynadcatiy",
+        app.goTo().homePage();
+        if (app.contact().list().size() == 0){
+            app.contact().create(new ContactData("Pavel", "Petrovich", "Voronin", "Trynadcatiy",
                     "Test", "DXBX", "SPb", "12-34-567", "+79003002000", "+79003002001",
                     "79003002002", "p.voronin@fakemail.ru", "test1@fakemail.ru", "test2@fakemail.ru", "dxbx.ru",
                     "1", "January", "1987", "2", "February", "1988", "Test16",
@@ -24,16 +24,16 @@ public class ContactModificationTests extends TestBase {
 
     @Test (enabled = true)
     public void testContactModification() {
-        List<ContactData> before = app.getContactHelper().getContactList();
         ContactData contact = new ContactData("Pavel", "Petrovich", "Voronin",
                 "Trynadcatiy", "Test", "DXBX", "SPb", "12-34-567",
                 "+79003002000", "+79003002001", "79003002002", "p.voronin@fakemail.ru",
                 "test1@fakemail.ru", "test2@fakemail.ru", "dxbx.ru", "1", "January",
                 "1987", "2", "February", "1988", "Test16", "Test17",
                 "Test18", null);
+        List<ContactData> before = app.contact().list();
         int index = before.size()-1;
-        app.getContactHelper().modifyContact(index, contact);
-        List<ContactData> after = app.getContactHelper().getContactList();
+        app.contact().modify(index, contact);
+        List<ContactData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size());
 
         before.set(index, contact);
