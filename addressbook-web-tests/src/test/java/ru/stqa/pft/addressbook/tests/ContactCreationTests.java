@@ -19,16 +19,16 @@ public class ContactCreationTests extends TestBase {
                 "1", "January", "1987", "2", "February", "1988", "Test16",
                 "Test17", "Test18", "Test7");
 
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null) {
-            app.getNavigationHelper().gotoGroupPage();
+            app.goTo().groupPage();
             // проверяем, есть ли группа с нужным названием в справочнике
-            if (!app.getGroupHelper().isThereAGroup(contact.getGroup())) {
+            if (!app.group().isThereAGroup(contact.getGroup())) {
                 // создаем группу с нужным названием, если такой нет
-                app.getGroupHelper().createGroup(new GroupData(contact.getGroup(), null, null));
+                app.group().create(new GroupData(contact.getGroup(), null, null));
             }
-            app.getNavigationHelper().gotoHomePage();
+            app.goTo().gotoHomePage();
         }
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().createContact(contact);

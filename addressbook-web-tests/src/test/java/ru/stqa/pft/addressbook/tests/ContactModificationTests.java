@@ -11,7 +11,7 @@ public class ContactModificationTests extends TestBase {
 
     @Test (enabled = false)
     public void testContactModification() {
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         if (! app.getContactHelper().isThereAContact()){
             app.getContactHelper().createContact(new ContactData("Pavel", "Petrovich", "Voronin", "Trynadcatiy",
                     "Test", "DXBX", "SPb", "12-34-567", "+79003002000", "+79003002001",
