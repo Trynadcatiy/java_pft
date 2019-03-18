@@ -26,7 +26,7 @@ public class ContactCreationTests extends TestBase {
             // проверяем, есть ли группа с нужным названием в справочнике
             if (!app.group().isThereAGroup(contact.getGroup())) {
                 // создаем группу с нужным названием, если такой нет
-                app.group().create(new GroupData(contact.getGroup(), null, null));
+                app.group().create(new GroupData().withName(contact.getGroup()));
             }
             app.goTo().gotoHomePage();
         }
