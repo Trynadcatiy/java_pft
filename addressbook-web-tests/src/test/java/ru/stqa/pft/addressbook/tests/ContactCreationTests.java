@@ -12,11 +12,14 @@ public class ContactCreationTests extends TestBase {
 
     @Test (enabled = true)
     public void testContactCreation() {
-        ContactData contact = new ContactData("Pavel", "Petrovich", "Voronin", "Trynadcatiy",
-                "Test", "DXBX", "SPb", "12-34-567", "+79003002000", "+79003002001",
-                "79003002002", "p.voronin@fakemail.ru", "test1@fakemail.ru", "test2@fakemail.ru", "dxbx.ru",
-                "1", "January", "1987", "2", "February", "1988", "Test16",
-                "Test17", "Test18", "Test7");
+        ContactData contact = new ContactData()
+                .withFirstname("Pavel").withMiddlename("Petrovich").withLastname("Voronin")
+                .withNickname("Trynadcatiy").withTitle("Test").withCompany("DXBX")
+                .withAddress("SPb").withHomeTelephone("12-34-567").withMobileTelephone("+79003002000")
+                .withWorkTelephone("+79003002001").withFax("79003002002").withEmail("p.voronin@fakemail.ru")
+                .withEmail2("test1@fakemail.ru").withEmail3("test2@fakemail.ru").withHomepage("dxbx.ru").withBday("1")
+                .withBmonth("January").withByear("1987").withAday("2").withAmonth("February").withAyear("1988")
+                .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").withGroup("Test7");
         app.goTo().homePage();
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null) {

@@ -39,7 +39,9 @@ public class HelperBase {
     }
 
     protected void select(By locator, String text) {
-        new Select(wd.findElement(locator)).selectByVisibleText(text);
+        if (text != null) {
+            new Select(wd.findElement(locator)).selectByVisibleText(text);
+        }
     }
 
     protected void acceptAlert() {
