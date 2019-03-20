@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.*;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test (enabled = true)
+    @Test (enabled = false)
     public void testContactCreation() {
         ContactData contact = new ContactData()
                 .withFirstname("Pavel").withMiddlename("Petrovich").withLastname("Voronin")

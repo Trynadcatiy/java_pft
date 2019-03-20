@@ -83,7 +83,7 @@ public class GroupHelper extends HelperBase {
         return isElementPresent(By.xpath("//*[@class='group' and .='" + text + "']/input[@name='selected[]']"));
     }
 
-    public int getGroupCount() {
+    public int count() {
         return wd.findElements(By.name("selected[]")).size();
     }
 
