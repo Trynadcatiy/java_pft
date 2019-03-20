@@ -8,7 +8,6 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -33,9 +32,9 @@ public class ContactHelper extends HelperBase {
         type(By.name("title"), contactData.getTitle());
         type(By.name("company"), contactData.getCompany());
         type(By.name("address"), contactData.getAddress());
-        type(By.name("home"), contactData.getHomeTelephone());
-        type(By.name("mobile"), contactData.getMobileTelephone());
-        type(By.name("work"), contactData.getWorkTelephone());
+        type(By.name("home"), contactData.getHomePhone());
+        type(By.name("mobile"), contactData.getMobilePhone());
+        type(By.name("work"), contactData.getWorkPhone());
         type(By.name("fax"), contactData.getFax());
         type(By.name("email"), contactData.getEmail());
         type(By.name("email2"), contactData.getEmail2());
@@ -140,9 +139,9 @@ public class ContactHelper extends HelperBase {
             int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
             String firstname = cells.get(2).getText();
             String lastname = cells.get(1).getText();
-            String[] phones = cells.get(5).getText().split("\n");
+            String allPhones = cells.get(5).getText();
             ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
-                    .withHomeTelephone(phones[0]).withMobileTelephone(phones[1]).withWorkTelephone(phones[2]);
+                    .withAllPhones(allPhones);
             contactCache.add(contact);
         }
         return new Contacts(contactCache);
