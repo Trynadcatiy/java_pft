@@ -8,6 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -132,13 +133,16 @@ public class ContactHelper extends HelperBase {
             return new Contacts(contactCache);
         }
         contactCache = new Contacts();
-        List<WebElement> elements = wd.findElements(By.cssSelector("tr[name='entry']"));
+        List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
 
-        for (WebElement element : elements){
-            int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            String firstname = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
-            String lastname = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
-            ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname);
+        for (WebElement row : rows){
+            List<WebElement> cells = row.findElements(By.tagName("td"));
+            int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
+            String firstname = cells.get(2).getText();
+            String lastname = cells.get(1).getText();
+            String[] phones = cells.get(5).getText().split("\n");
+            ContactData contact = new ContactData().withId(id).withFirstname(firstname).withLastname(lastname)
+                    .withHomeTelephone(phones[0]).withMobileTelephone(phones[1]).withWorkTelephone(phones[2]);
             contactCache.add(contact);
         }
         return new Contacts(contactCache);
