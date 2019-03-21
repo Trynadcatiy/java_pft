@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -11,9 +12,9 @@ public class ContactData {
     private String title;
     private String company;
     private String address;
-    private String homeTelephone;
-    private String mobileTelephone;
-    private String workTelephone;
+    private String homePhone;
+    private String mobilePhone;
+    private String workPhone;
     private String fax;
     private String email;
     private String email2;
@@ -30,10 +31,16 @@ public class ContactData {
     private String notes;
     private String group;
     private String allPhones;
+    private File photo;
+
+    public File getPhoto() {
+        return photo;
+    }
 
     public String getAllPhones() {
         return allPhones;
     }
+
     public int getId() {
         return id;
     }
@@ -67,15 +74,15 @@ public class ContactData {
     }
 
     public String getHomePhone() {
-        return homeTelephone;
+        return homePhone;
     }
 
     public String getMobilePhone() {
-        return mobileTelephone;
+        return mobilePhone;
     }
 
     public String getWorkPhone() {
-        return workTelephone;
+        return workPhone;
     }
 
     public String getFax() {
@@ -143,6 +150,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
     public ContactData withAllPhones(String allPhones) {
         this.allPhones = allPhones;
         return this;
@@ -183,18 +195,18 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withHomeTelephone(String homeTelephone) {
-        this.homeTelephone = homeTelephone;
+    public ContactData withHomePhone(String homePhone) {
+        this.homePhone = homePhone;
         return this;
     }
 
-    public ContactData withMobileTelephone(String mobileTelephone) {
-        this.mobileTelephone = mobileTelephone;
+    public ContactData withMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
         return this;
     }
 
-    public ContactData withWorkTelephone(String workTelephone) {
-        this.workTelephone = workTelephone;
+    public ContactData withWorkPhone(String workPhone) {
+        this.workPhone = workPhone;
         return this;
     }
 

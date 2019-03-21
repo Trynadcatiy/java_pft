@@ -49,6 +49,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("address2"), contactData.getAddress2());
         type(By.name("phone2"), contactData.getPhone2());
         type(By.name("notes"), contactData.getNotes());
+        attach(By.name("photo"), contactData.getPhoto());
 
         if (! creation) {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
@@ -156,6 +157,6 @@ public class ContactHelper extends HelperBase {
         String work = wd.findElement(By.name("work")).getAttribute("value");
         wd.navigate().back();
         return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname)
-                .withHomeTelephone(home).withMobileTelephone(mobile).withWorkTelephone(work);
+                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
     }
 }

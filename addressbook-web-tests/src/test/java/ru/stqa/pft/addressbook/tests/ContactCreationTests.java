@@ -5,21 +5,24 @@ import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 
+import java.io.File;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.*;
 
 public class ContactCreationTests extends TestBase {
 
-    @Test (enabled = false)
+    @Test
     public void testContactCreation() {
+        File photo = new File("src/test/resources/stru.jpg");
         ContactData contact = new ContactData()
                 .withFirstname("Pavel").withMiddlename("Petrovich").withLastname("Voronin")
                 .withNickname("Trynadcatiy").withTitle("Test").withCompany("DXBX")
-                .withAddress("SPb").withHomeTelephone("12-34-567").withMobileTelephone("+79003002000")
-                .withWorkTelephone("+79003002001").withFax("79003002002").withEmail("p.voronin@fakemail.ru")
+                .withAddress("SPb").withHomePhone("12-34-567").withMobilePhone("+79003002000")
+                .withWorkPhone("+79003002001").withFax("79003002002").withEmail("p.voronin@fakemail.ru")
                 .withEmail2("test1@fakemail.ru").withEmail3("test2@fakemail.ru").withHomepage("dxbx.ru").withBday("1")
                 .withBmonth("January").withByear("1987").withAday("2").withAmonth("February").withAyear("1988")
-                .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").withGroup("Test7");
+                .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").withGroup("Test7").withPhoto(photo);
         app.goTo().homePage();
         // если не указано название группы - переходим к созданию контакта
         if (contact.getGroup() != null) {
