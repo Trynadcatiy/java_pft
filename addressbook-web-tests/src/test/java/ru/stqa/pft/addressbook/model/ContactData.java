@@ -11,9 +11,9 @@ public class ContactData {
     private String title;
     private String company;
     private String address;
-    private String homeTelephone;
-    private String mobileTelephone;
-    private String workTelephone;
+    private String homePhone;
+    private String mobilePhone;
+    private String workPhone;
     private String fax;
     private String email;
     private String email2;
@@ -30,10 +30,16 @@ public class ContactData {
     private String notes;
     private String group;
     private String allPhones;
+    private String allEmails;
 
     public String getAllPhones() {
         return allPhones;
     }
+
+    public String getAllEmails() {
+        return allEmails;
+    }
+
     public int getId() {
         return id;
     }
@@ -67,15 +73,15 @@ public class ContactData {
     }
 
     public String getHomePhone() {
-        return homeTelephone;
+        return homePhone;
     }
 
     public String getMobilePhone() {
-        return mobileTelephone;
+        return mobilePhone;
     }
 
     public String getWorkPhone() {
-        return workTelephone;
+        return workPhone;
     }
 
     public String getFax() {
@@ -183,18 +189,18 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withHomeTelephone(String homeTelephone) {
-        this.homeTelephone = homeTelephone;
+    public ContactData withHomePhone(String homePhone) {
+        this.homePhone = homePhone;
         return this;
     }
 
-    public ContactData withMobileTelephone(String mobileTelephone) {
-        this.mobileTelephone = mobileTelephone;
+    public ContactData withMobilePhone(String mobilePhone) {
+        this.mobilePhone = mobilePhone;
         return this;
     }
 
-    public ContactData withWorkTelephone(String workTelephone) {
-        this.workTelephone = workTelephone;
+    public ContactData withWorkPhone(String workPhone) {
+        this.workPhone = workPhone;
         return this;
     }
 
@@ -270,6 +276,11 @@ public class ContactData {
 
     public ContactData withGroup(String group) {
         this.group = group;
+        return this;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
         return this;
     }
 
