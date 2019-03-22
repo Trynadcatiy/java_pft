@@ -36,9 +36,15 @@ public class ContactData {
     public File getPhoto() {
         return photo;
     }
+    private String allEmails;
 
     public String getAllPhones() {
         return allPhones;
+    }
+
+
+    public String getAllEmails() {
+        return allEmails;
     }
 
     public int getId() {
@@ -282,6 +288,11 @@ public class ContactData {
 
     public ContactData withGroup(String group) {
         this.group = group;
+        return this;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
         return this;
     }
 
