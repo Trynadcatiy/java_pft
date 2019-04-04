@@ -41,7 +41,7 @@ public class ApplicationManager {
             wd = new InternetExplorerDriver();
 
         }
-        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(Integer.parseInt(properties.getProperty("web.baseTimeout")), TimeUnit.MILLISECONDS);
         wd.get(properties.getProperty("web.baseUrl"));
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
