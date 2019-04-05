@@ -3,73 +3,123 @@ package ru.stqa.pft.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
 
 @XStreamAlias("contact")
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
     @XStreamOmitField
+    @Id
+    @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Expose
+    @Column(name = "firstname")
     private String firstname;
     @XStreamOmitField
+    @Column(name = "middlename")
     private String middlename;
     @Expose
+    @Column(name = "lastname")
     private String lastname;
     @XStreamOmitField
+    @Column(name = "nickname")
     private String nickname;
     @XStreamOmitField
+    @Column(name = "title")
     private String title;
     @XStreamOmitField
+    @Column(name = "company")
     private String company;
     @XStreamOmitField
+    @Column(name = "address")
+    @Type(type = "text")
     private String address;
     @Expose
+    @Column(name = "home")
+    @Type(type = "text")
     private String homePhone;
     @Expose
+    @Column(name = "mobile")
+    @Type(type = "text")
     private String mobilePhone;
     @Expose
+    @Column(name = "work")
+    @Type(type = "text")
     private String workPhone;
     @XStreamOmitField
+    @Column(name = "fax")
+    @Type(type = "text")
     private String fax;
     @XStreamOmitField
+    @Column(name = "email")
+    @Type(type = "text")
     private String email;
     @XStreamOmitField
+    @Column(name = "email2")
+    @Type(type = "text")
     private String email2;
     @XStreamOmitField
+    @Column(name = "email3")
+    @Type(type = "text")
     private String email3;
     @XStreamOmitField
+    @Column(name = "homepage")
+    @Type(type = "text")
     private String homepage;
     @XStreamOmitField
-    private String bday;
+    @Column(name = "bday")
+    @Type(type = "byte")
+    private byte bday;
     @XStreamOmitField
+    @Column(name = "bmonth")
     private String bmonth;
     @XStreamOmitField
+    @Column(name = "byear")
     private String byear;
     @XStreamOmitField
-    private String aday;
+    @Column(name = "aday")
+    @Type(type = "byte")
+    private byte aday;
     @XStreamOmitField
+    @Column(name = "amonth")
     private String amonth;
     @XStreamOmitField
+    @Column(name = "ayear")
     private String ayear;
     @XStreamOmitField
+    @Column(name = "address2")
+    @Type(type = "text")
     private String address2;
     @XStreamOmitField
+    @Column(name = "phone2")
+    @Type(type = "text")
     private String phone2;
     @XStreamOmitField
+    @Column(name = "notes")
+    @Type(type = "text")
     private String notes;
     @XStreamOmitField
+    @Transient
     private String group;
     @XStreamOmitField
+    @Transient
     private String allPhones;
     @XStreamOmitField
-    private File photo;
+    @Column(name = "photo")
+    @Type(type = "text")
+    private String photo;
+    @XStreamOmitField
+    @Transient
+    private String allEmails;
 
     public File getPhoto() {
-        return photo;
+        return new File(photo);
     }
-    private String allEmails;
 
     public String getAllPhones() {
         return allPhones;
@@ -145,7 +195,7 @@ public class ContactData {
     }
 
     public String getBday() {
-        return bday;
+        return Byte.toString(bday);
     }
 
     public String getBmonth() {
@@ -157,7 +207,7 @@ public class ContactData {
     }
 
     public String getAday() {
-        return aday;
+        return Byte.toString(aday);
     }
 
     public String getAmonth() {
@@ -190,7 +240,7 @@ public class ContactData {
     }
 
     public ContactData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
@@ -275,7 +325,7 @@ public class ContactData {
     }
 
     public ContactData withBday(String bday) {
-        this.bday = bday;
+        this.bday = Byte.parseByte(bday);
         return this;
     }
 
@@ -290,7 +340,7 @@ public class ContactData {
     }
 
     public ContactData withAday(String aday) {
-        this.aday = aday;
+        this.aday = Byte.parseByte(aday);
         return this;
     }
 
@@ -342,5 +392,14 @@ public class ContactData {
     @Override
     public int hashCode() {
         return Objects.hash(id, firstname, lastname);
+    }
+
+    @Override
+    public String toString() {
+        return "ContactData{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
     }
 }

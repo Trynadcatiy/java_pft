@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94a08c97-4aa7-4a77-8938-5a790ffae2fe" name="Default Changelist" comment="Добавлентест получения списка групп через объектно реляционные преобразования">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__mysql_mysql_connector_java_5_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" afterDir="false" />
+    <list default="true" id="94a08c97-4aa7-4a77-8938-5a790ffae2fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
     <ignored path="$PROJECT_DIR$/sandbox/build/" />
@@ -124,20 +101,20 @@
         <counts>
           <entry key="dummy" value="12" />
           <entry key="gradle" value="226" />
-          <entry key="java" value="15017" />
+          <entry key="java" value="15425" />
           <entry key="properties" value="167" />
           <entry key="txt" value="6715" />
-          <entry key="xml" value="92" />
+          <entry key="xml" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="226" />
-          <entry key="JAVA" value="14978" />
+          <entry key="JAVA" value="15386" />
           <entry key="PLAIN_TEXT" value="6727" />
           <entry key="Properties" value="167" />
           <entry key="Scratch" value="52" />
-          <entry key="XML" value="79" />
+          <entry key="XML" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -145,7 +122,7 @@
           <entry key="class" value="1" />
           <entry key="csv" value="2" />
           <entry key="gradle" value="9" />
-          <entry key="java" value="255" />
+          <entry key="java" value="261" />
           <entry key="json" value="4" />
           <entry key="log" value="4" />
           <entry key="properties" value="2" />
@@ -158,7 +135,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CSV" value="1" />
           <entry key="Groovy" value="9" />
-          <entry key="JAVA" value="254" />
+          <entry key="JAVA" value="260" />
           <entry key="JSON" value="3" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="2" />
@@ -172,36 +149,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/test-20190404T201117.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/logs/test-20190405T113616.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2652" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/test-20190404T201437.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" selection-start-line="14" selection-end-line="15" />
+            <state relative-caret-position="153">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -209,8 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="352">
+              <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -218,7 +169,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-464">
               <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -230,10 +181,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+            <state relative-caret-position="284">
+              <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,25 +211,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/SuiteRunnerWorker.java">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="389">
+              <caret line="404" column="1" lean-forward="true" selection-start-line="404" selection-start-column="1" selection-end-line="404" selection-end-column="1" />
               <folding>
-                <element signature="e#2672#2673#0" expanded="true" />
+                <element signature="e#2582#2583#0" expanded="true" />
+                <element signature="e#2619#2620#0" expanded="true" />
+                <element signature="e#1776#1777#0" expanded="true" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#4268#4269#0" expanded="true" />
+                <element signature="e#4312#4313#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTests.java">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/ClassLoaderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="88" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3521">
+              <caret line="66" column="74" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/AggregatedClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2790">
+              <caret line="40" column="87" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/TcclLookupPrecedence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -292,6 +281,10 @@
       <find>String</find>
       <find>time</find>
       <find>phot</find>
+      <find>photo</find>
+      <find>text</find>
+      <find>homepa</find>
+      <find>bday</find>
     </findStrings>
     <replaceStrings>
       <replace>ContactData with</replace>
@@ -682,9 +675,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4661929824255" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="4661941184685" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="247091222" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests/build.gradle" value="3202515729" />
         <entry key="$PROJECT_DIR$/addressbook-web-tests/gradle/wrapper/gradle-wrapper.properties" value="2683517160" />
         <entry key="$PROJECT_DIR$/sandbox" value="4647282343660" />
         <entry key="$PROJECT_DIR$/sandbox/.gradle" value="0" />
@@ -1008,7 +1001,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.json" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.csv" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/Generators/GroupDataGenerator.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/Generators/ContactDataGenerator.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" />
@@ -1024,11 +1016,12 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTests.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -1070,12 +1063,6 @@
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
@@ -1135,15 +1122,68 @@
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: mysql:mysql-connector-java:5.1.38" type="70bed36:NamedLibraryElementNode" />
-              <item name="mysql-connector-java-5.1.38.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: mysql:mysql-connector-java:5.1.38" type="70bed36:NamedLibraryElementNode" />
-              <item name="mysql-connector-java-5.1.38.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+              <item name="classloading" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+              <item name="classloading" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.hibernate:hibernate-core:5.4.2.Final" type="70bed36:NamedLibraryElementNode" />
+              <item name="hibernate-core-5.4.2.Final.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+              <item name="registry" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1161,7 +1201,7 @@
     <property name="SearchEverywhereHistoryKey" value="isElementPresent&#9;ACTION&#9;null&#10;firefox&#9;FILE&#9;jar://C:/Users/defaultuser/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/3.141.59/a99f2fe2a42747ed9809d4f62f51a9e1b336dde8/selenium-firefox-driver-3.141.59.jar!/org/openqa/selenium/firefox/FirefoxDriverLogLevel.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554453477238" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554467259653" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON&#10;XML" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
@@ -1246,6 +1286,22 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="ContactCreationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactCreationTests" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactModificationTests" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
       <module name="addressbook-web-tests_test" />
       <extension name="coverage">
@@ -1314,22 +1370,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupCreationTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupCreationTests" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HbConnectionTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests_test" />
       <extension name="coverage">
@@ -1351,19 +1391,19 @@
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Gradle.sandbox [test]" />
       <item itemvalue="TestNG.ContactModificationTests" />
-      <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.DbConnectionTests.TestDbConnection" />
       <item itemvalue="TestNG.DbConnectionTests.testDbConnection" />
       <item itemvalue="TestNG.HbConnectionTests" />
       <item itemvalue="TestNG.DbConnectionTests" />
+      <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.HbConnectionTests" />
+        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.DbConnectionTests" />
         <item itemvalue="TestNG.DbConnectionTests.testDbConnection" />
         <item itemvalue="TestNG.DbConnectionTests.TestDbConnection" />
-        <item itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1403,14 +1443,7 @@
       <workItem from="1553519058720" duration="9754000" />
       <workItem from="1553671071198" duration="592000" />
       <workItem from="1554099703255" duration="592000" />
-      <workItem from="1554369139262" duration="25757000" />
-    </task>
-    <task id="LOCAL-00037" summary="добавлен выбор контакта по порядковому номеру в массиве">
-      <created>1548941149768</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1548941149769</updated>
+      <workItem from="1554369139262" duration="34426000" />
     </task>
     <task id="LOCAL-00038" summary="добавлено количество контактов до и после создания/удаления/изменения контакта">
       <created>1548941172670</created>
@@ -1748,43 +1781,50 @@
       <option name="project" value="LOCAL" />
       <updated>1554446835725</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Добавлентест получения списка групп через объектно реляционные преобразования">
+      <created>1554453531494</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1554453531495</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 03m 28s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 32m 48s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 04m 48s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 34m 52s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 06m 27s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 35m 46s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 11m 48s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 36m 09s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 13m 10s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 36m 37s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 26m 14s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 37m 09s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 27m 18s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 43m 18s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 28m 41s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 44m 35s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 34m 48s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 46m 17s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HbConnectionTests - 2019.04.05 at 11h 36m 19s.xml">
+    <history-entry file="HbConnectionTests - 2019.04.05 at 14h 48m 11s.xml">
       <configuration name="HbConnectionTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222656000" />
+    <option name="totallyTimeSpent" value="231325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1799,7 +1839,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1816,7 +1856,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32925472" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32925472" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32925472" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850778" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.2880979" />
       <window_info anchor="bottom" id="Extract Method" order="13" weight="0.32925472" />
@@ -1826,7 +1866,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Coverage" order="4" sideWeight="0.50082916" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.27771854" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="8" sideWeight="0.4991708" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
@@ -1876,7 +1916,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Добавлена обертка коллекции для хранения контактов, тест создания контактов переписан под использование этоой обертки" />
     <MESSAGE value="тесты удаления и изменения контакта теперь используют обертку коллекции контактов" />
     <MESSAGE value="Добавлено кеширование списка групп" />
     <MESSAGE value="Добавлено кеширование списка контактов" />
@@ -1901,30 +1940,10 @@
     <MESSAGE value="вынес настройку таймаута в конфигурационный файл" />
     <MESSAGE value="Добавлено логирование запуска и прерывания теста" />
     <MESSAGE value="Добавлен драйвер базы данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен драйвер базы данных" />
+    <MESSAGE value="Добавлентест получения списка групп через объектно реляционные преобразования" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлентест получения списка групп через объектно реляционные преобразования" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.141.59/8e9423038552821844ba5f7713cc4c1e6d9835b7/selenium-api-3.141.59-sources.jar!/org/openqa/selenium/By.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="202" column="33" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.3/bfd2538501a129a142fe8366169c48b91609dc0b/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="592" selection-start-line="592" selection-end-line="592" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="293" lean-forward="true" selection-end-column="293" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.0-jre/30ade485699e7782cc2369b0e5d3d8e0bfc317c/guava-25.0-jre-sources.jar!/com/google/common/collect/ForwardingCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -2028,17 +2047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3389">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding>
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -2102,13 +2110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="167" column="93" selection-start-line="167" selection-start-column="93" selection-end-line="167" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
@@ -2127,13 +2128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="44" column="117" selection-start-line="44" selection-start-column="117" selection-end-line="44" selection-end-column="117" />
         </state>
       </provider>
     </entry>
@@ -2218,9 +2212,51 @@
         <state relative-caret-position="-2652" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="57" column="26" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/TcclLookupPrecedence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/AggregatedClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2790">
+          <caret line="40" column="87" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.2.Final/3ae6c8d36f69275a06b869df09e557c11b746352/hibernate-core-5.4.2.Final-sources.jar!/org/hibernate/boot/registry/classloading/internal/ClassLoaderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3521">
+          <caret line="66" column="74" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="-464">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2230,34 +2266,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="352">
+          <caret line="38" column="65" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="389">
+          <caret line="404" column="1" lean-forward="true" selection-start-line="404" selection-start-column="1" selection-end-line="404" selection-end-column="1" />
+          <folding>
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2619#2620#0" expanded="true" />
+            <element signature="e#1776#1777#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#4268#4269#0" expanded="true" />
+            <element signature="e#4312#4313#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-end-line="15" />
+        <state relative-caret-position="284">
+          <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
