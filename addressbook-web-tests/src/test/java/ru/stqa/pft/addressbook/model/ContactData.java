@@ -117,6 +117,78 @@ public class ContactData {
     @Transient
     private String allEmails;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id &&
+                bday == that.bday &&
+                aday == that.aday &&
+                Objects.equals(firstname, that.firstname) &&
+                Objects.equals(middlename, that.middlename) &&
+                Objects.equals(lastname, that.lastname) &&
+                Objects.equals(nickname, that.nickname) &&
+                Objects.equals(title, that.title) &&
+                Objects.equals(company, that.company) &&
+                Objects.equals(address, that.address) &&
+                Objects.equals(homePhone, that.homePhone) &&
+                Objects.equals(mobilePhone, that.mobilePhone) &&
+                Objects.equals(workPhone, that.workPhone) &&
+                Objects.equals(fax, that.fax) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(email2, that.email2) &&
+                Objects.equals(email3, that.email3) &&
+                Objects.equals(homepage, that.homepage) &&
+                Objects.equals(bmonth, that.bmonth) &&
+                Objects.equals(byear, that.byear) &&
+                Objects.equals(ayear, that.ayear) &&
+                Objects.equals(address2, that.address2) &&
+                Objects.equals(phone2, that.phone2) &&
+                Objects.equals(notes, that.notes) &&
+                Objects.equals(group, that.group);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstname, middlename, lastname, nickname, title, company, address, homePhone, mobilePhone, workPhone, fax, email, email2, email3, homepage, bday, bmonth, byear, aday, ayear, address2, phone2, notes, group);
+    }
+
+    public ContactData(ContactData contact) {
+        this.id = contact.getId();
+        this.firstname = contact.getFirstname();
+        this.middlename = contact.getMiddlename();
+        this.lastname = contact.getLastname();
+        this.nickname = contact.getNickname();
+        this.title = contact.getTitle();
+        this.company = contact.getCompany();
+        this.address = contact.getAddress();
+        this.homePhone = contact.getHomePhone();
+        this.mobilePhone = contact.getMobilePhone();
+        this.workPhone = contact.getWorkPhone();
+        this.fax = contact.getFax();
+        this.email = contact.getEmail();
+        this.email2 = contact.getEmail2();
+        this.email3 = contact.getEmail3();
+        this.homepage = contact.getHomepage();
+        this.bday = Byte.parseByte(contact.getBday());
+        this.bmonth = contact.getBmonth();
+        this.byear = contact.getByear();
+        this.aday = Byte.parseByte(contact.getAday());
+        this.amonth = contact.getAmonth();
+        this.ayear = contact.getAyear();
+        this.address2 = contact.getAddress2();
+        this.phone2 = contact.getPhone2();
+        this.notes = contact.getNotes();
+        this.group = contact.getGroup();
+        this.allPhones = contact.getAllPhones();
+        this.allEmails = contact.getAllEmails();
+    }
+
+    public ContactData() {
+
+    }
+
     public File getPhoto() {
         if (photo != null) {
             return new File(photo);
@@ -383,26 +455,36 @@ public class ContactData {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id &&
-                Objects.equals(firstname, that.firstname) &&
-                Objects.equals(lastname, that.lastname);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstname, lastname);
-    }
-
-    @Override
     public String toString() {
         return "ContactData{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
+                ", middlename='" + middlename + '\'' +
                 ", lastname='" + lastname + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", title='" + title + '\'' +
+                ", company='" + company + '\'' +
+                ", address='" + address + '\'' +
+                ", homePhone='" + homePhone + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", workPhone='" + workPhone + '\'' +
+                ", fax='" + fax + '\'' +
+                ", email='" + email + '\'' +
+                ", email2='" + email2 + '\'' +
+                ", email3='" + email3 + '\'' +
+                ", homepage='" + homepage + '\'' +
+                ", bday=" + bday +
+                ", bmonth='" + bmonth + '\'' +
+                ", byear='" + byear + '\'' +
+                ", aday=" + aday +
+                ", amonth='" + amonth + '\'' +
+                ", ayear='" + ayear + '\'' +
+                ", address2='" + address2 + '\'' +
+                ", phone2='" + phone2 + '\'' +
+                ", notes='" + notes + '\'' +
+                ", group='" + group + '\'' +
+                ", allPhones='" + allPhones + '\'' +
+                ", allEmails='" + allEmails + '\'' +
                 '}';
     }
 }

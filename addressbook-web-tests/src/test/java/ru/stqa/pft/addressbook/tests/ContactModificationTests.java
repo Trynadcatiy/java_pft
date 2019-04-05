@@ -29,7 +29,7 @@ public class ContactModificationTests extends TestBase {
     public void testContactModification() {
         Contacts before = app.db().contacts();
         ContactData modifiedContact = before.iterator().next();
-        ContactData contact = new ContactData()
+        ContactData contact = new ContactData(modifiedContact)
                 .withId(modifiedContact.getId()).withFirstname("Pavel").withMiddlename("Petrovich")
                 .withLastname("Voronin").withNickname("Trynadcatiy").withBday("2")
                 .withAday("3").withAmonth("April");
