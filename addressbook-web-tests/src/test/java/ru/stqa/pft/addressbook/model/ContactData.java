@@ -118,7 +118,10 @@ public class ContactData {
     private String allEmails;
 
     public File getPhoto() {
-        return new File(photo);
+        if (photo != null) {
+            return new File(photo);
+        }
+        return null;
     }
 
     public String getAllPhones() {
