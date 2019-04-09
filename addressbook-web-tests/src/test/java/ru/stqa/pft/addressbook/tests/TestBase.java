@@ -40,13 +40,13 @@ public class TestBase {
         logger.info("Start test " + method.getName() + "with parametrs" + Arrays.asList(parametrs));
     }
 
-    @AfterMethod (alwaysRun = true)
+    @AfterMethod(alwaysRun = true)
     public void logTestStop(Method method) {
         logger.info("Stop test " + method.getName());
     }
 
     public void verifyGroupListInUI() {
-        if (Boolean.getBoolean("verifyUI")){
+        if (Boolean.getBoolean("verifyUI")) {
             Groups dbGroups = app.db().groups();
             Groups uiGroups = app.group().all();
             assertThat(uiGroups, equalTo(dbGroups.stream().

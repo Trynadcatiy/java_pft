@@ -23,21 +23,22 @@ public class GroupCreationTests extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validGroups() throws IOException {
-        try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")))){
+        try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")))) {
             String json = "";
             String line = reader.readLine();
-            while (line != null){
+            while (line != null) {
                 json += line;
                 line = reader.readLine();
             }
             Gson gson = new Gson();
-            List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>(){}.getType());
+            List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>() {
+            }.getType());
             return groups.stream().map((c) -> new Object[]{c}).collect(Collectors.toList()).iterator();
         }
 
     }
 
-    @Test (dataProvider = "validGroups")
+    @Test(dataProvider = "validGroups")
     public void testGroupCreation(GroupData group) {
         Groups before = app.db().groups();
         app.goTo().groupPage();
@@ -46,6 +47,7 @@ public class GroupCreationTests extends TestBase {
         Groups after = app.db().groups();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
+        verifyGroupListInUI();
     }
 
     @Test
@@ -58,6 +60,7 @@ public class GroupCreationTests extends TestBase {
         Groups after = app.db().groups();
         assertThat(after, equalTo(
                 before));
+        verifyGroupListInUI();
     }
 
 }
