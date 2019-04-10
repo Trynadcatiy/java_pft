@@ -51,13 +51,13 @@ public class ContactHelper extends HelperBase {
         type(By.name("notes"), contactData.getNotes());
         attach(By.name("photo"), contactData.getPhoto());
 
-        if (! creation) {
-            Assert.assertFalse(isElementPresent(By.name("new_group")));
-
-        } else if (contactData.getGroup() != null) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-        } else {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText("[none]");
+        if (creation) {
+            if (contactData.getGroups().size() > 0) {
+                Assert.assertTrue(contactData.getGroups().size() == 1);
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+            } else {
+                Assert.assertFalse(isElementPresent(By.name("new_group")));
+            }
         }
     }
 
@@ -77,7 +77,7 @@ public class ContactHelper extends HelperBase {
 
 
     public void selectContactById(int id) {
-        wd.findElement(By.cssSelector("input[value='"+id+"']")).click();
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
     public void initContactDeletion() {
@@ -118,7 +118,7 @@ public class ContactHelper extends HelperBase {
         contactDeletionConfirmed();
     }
 
-    public boolean isThereAContact(){
+    public boolean isThereAContact() {
         return isElementPresent(By.name("selected[]"));
     }
 
@@ -129,13 +129,13 @@ public class ContactHelper extends HelperBase {
     private Contacts contactCache = null;
 
     public Contacts all() {
-        if (contactCache != null){
+        if (contactCache != null) {
             return new Contacts(contactCache);
         }
         contactCache = new Contacts();
         List<WebElement> rows = wd.findElements(By.cssSelector("tr[name='entry']"));
 
-        for (WebElement row : rows){
+        for (WebElement row : rows) {
             List<WebElement> cells = row.findElements(By.tagName("td"));
             int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
             String firstname = cells.get(2).getText();
