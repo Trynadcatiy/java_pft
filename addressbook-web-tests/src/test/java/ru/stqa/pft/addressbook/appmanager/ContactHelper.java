@@ -3,7 +3,6 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
@@ -55,7 +54,7 @@ public class ContactHelper extends HelperBase {
         if (creation) {
             if (contactData.getGroups().size() > 0) {
                 Assert.assertTrue(contactData.getGroups().size() == 1);
-                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+                select(By.name("new_group"), contactData.getGroups().iterator().next().getName());
             } else {
                 Assert.assertFalse(isElementPresent(By.name("new_group")));
             }
@@ -170,15 +169,31 @@ public class ContactHelper extends HelperBase {
     }
 
     public void addToGroup(ContactData contact, GroupData group) {
-        select(By.name("group"), "[all]");
+        filterByGroup("[all]");
         selectContactById(contact.getId());
-        select(By.name("to_group"), group.getName());
-        click(By.name("add"));
+        initAddToGroup(group);
+        contactAddtionToGroupConfirmed(group);
+        returnToContactsFilteredByGroup(group);
+    }
+
+    public void returnToContactsFilteredByGroup(GroupData group) {
+        click(By.linkText(String.format("group page \"%s\"", group.getName())));
+    }
+
+    public void contactAddtionToGroupConfirmed(GroupData group) {
         WebElement messegeBox = wd.findElement(By.xpath("//div[@class='msgbox']"));
         String expectedText = String.format("Users added.\nGo to group page \"%s\".", group.getName());
         if (messegeBox.getText().equals(expectedText)) {
             messegeBox.isDisplayed();
         }
-        click(By.linkText(String.format("group page \"%s\"", group.getName())));
+    }
+
+    public void initAddToGroup(GroupData group) {
+        select(By.name("to_group"), group.getName());
+        click(By.name("add"));
+    }
+
+    public void filterByGroup(String group) {
+        select(By.name("group"), group);
     }
 }
