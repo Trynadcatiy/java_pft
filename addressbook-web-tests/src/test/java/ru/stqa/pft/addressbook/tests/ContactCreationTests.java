@@ -41,6 +41,11 @@ public class ContactCreationTests extends TestBase {
 
     @Test(dataProvider = "validContacts")
     public void testContactCreation(ContactData contact) {
+        if (app.db().groups().size() == 0) {
+            app.goTo().groupPage();
+                app.group().create(new GroupData().withName("Test13"));
+            app.goTo().homePage();
+        }
         Groups groups = app.db().groups();
         File photo = new File("src/test/resources/stru.jpg");
         contact.withMiddlename("Petrovich")
@@ -51,16 +56,6 @@ public class ContactCreationTests extends TestBase {
                 .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").withPhoto(photo).inGroup(groups.iterator().next());
         app.goTo().homePage();
         // если не указано название группы - переходим к созданию контакта
-        if (contact.getGroups().size() != 0) {
-            app.goTo().groupPage();
-            Assert.assertTrue(contact.getGroups().size() == 1);
-            // проверяем, есть ли группа с нужным названием в справочнике
-            if (!app.group().isThereAGroup(contact.getGroups().iterator().next().getName())) {
-                // создаем группу с нужным названием, если такой нет
-                app.group().create(new GroupData().withName(contact.getGroups().iterator().next().getName()));
-            }
-            app.goTo().homePage();
-        }
         Contacts before = app.db().contacts();
         app.contact().create(contact);
 
