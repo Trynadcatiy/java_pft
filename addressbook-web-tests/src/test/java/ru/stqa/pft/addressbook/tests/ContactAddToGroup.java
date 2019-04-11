@@ -33,7 +33,16 @@ public class ContactAddToGroup extends TestBase {
     public void testContactAddToGroup() {
         Groups groups = app.db().groups();
         Contacts contacts = app.db().contacts();
-        app.contact().addToGroup(contacts.iterator().next(), groups.iterator().next());
+        //Получаю список контактов, не связанные хотябы с одной из имеющихся групп и беру одну
+        ContactData contact = contacts.stream()
+                .filter((c) -> groups.stream()
+                        .anyMatch((g)->!c.getGroups().contains(g)))
+                .iterator().next();
+        //Получаю список групп не связанных с выбранным контактом и беру одну
+        GroupData group = groups.stream()
+                .filter((g)->!contact.getGroups().contains(g))
+                .iterator().next();
+        app.contact().addToGroup(contact, group);
 
     }
 }
