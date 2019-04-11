@@ -10,12 +10,14 @@ import ru.stqa.pft.addressbook.model.Groups;
 public class ContactAddToGroup extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
-        if (app.db().contacts().size() == 0) {
-            if (app.db().groups().size() == 0) {
-                app.goTo().groupPage();
-                app.group().create(new GroupData().withName("Test13"));
-                app.goTo().homePage();
-            }
+        if (app.db().groups().size() == 0) {
+            app.goTo().groupPage();
+            app.group().create(new GroupData().withName("Test13"));
+            app.goTo().homePage();
+        }
+        if (app.db().contacts().size() == 0 ||
+                app.db().contacts().stream()
+                        .anyMatch((c)->app.db().groups().size() == c.getGroups().size())) {
             Groups groups = app.db().groups();
             app.goTo().homePage();
             app.contact().create(new ContactData()
