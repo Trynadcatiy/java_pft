@@ -196,4 +196,20 @@ public class ContactHelper extends HelperBase {
     public void filterByGroup(String group) {
         select(By.name("group"), group);
     }
+
+    public void removeFromGroup(ContactData contact, GroupData group) {
+        filterByGroup(group.getName());
+        selectContactById(contact.getId());
+        click(By.name("remove"));
+        contactDeletionFromGroupConfirmed(group);
+        returnToContactsFilteredByGroup(group);
+    }
+
+    public void contactDeletionFromGroupConfirmed(GroupData group) {
+        WebElement messegeBox = wd.findElement(By.xpath("//div[@class='msgbox']"));
+        String expectedText = String.format("Users removed.\nreturn to group page \"%s\".", group.getName());
+        if (messegeBox.getText().equals(expectedText)) {
+            messegeBox.isDisplayed();
+        }
+    }
 }

@@ -12,7 +12,7 @@ import java.util.Optional;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactAddToGroup extends TestBase {
+public class ContactAddToGroupTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         if (app.db().groups().size() == 0) {
