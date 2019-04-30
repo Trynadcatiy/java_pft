@@ -7,6 +7,11 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
+import java.util.Optional;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class ContactAddToGroup extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
@@ -17,8 +22,7 @@ public class ContactAddToGroup extends TestBase {
         }
         if (app.db().contacts().size() == 0 ||
                 app.db().contacts().stream()
-                        .anyMatch((c)->app.db().groups().size() == c.getGroups().size())) {
-            Groups groups = app.db().groups();
+                        .allMatch((c)->app.db().groups().size() == c.getGroups().size())) {
             app.goTo().homePage();
             app.contact().create(new ContactData()
                     .withFirstname("Pavel").withMiddlename("Petrovich").withLastname("Voronin")
@@ -27,7 +31,7 @@ public class ContactAddToGroup extends TestBase {
                     .withWorkPhone("+79003002001").withFax("79003002002").withEmail("p.voronin@fakemail.ru")
                     .withEmail2("test1@fakemail.ru").withEmail3("test2@fakemail.ru").withHomepage("dxbx.ru").withBday("1")
                     .withBmonth("January").withByear("1987").withAday("2").withAmonth("February").withAyear("1988")
-                    .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").inGroup(groups.iterator().next()));
+                    .withAddress2("Test16").withPhone2("Test17").withNotes("Test18"));
         }
     }
 
@@ -36,15 +40,19 @@ public class ContactAddToGroup extends TestBase {
         Groups groups = app.db().groups();
         Contacts contacts = app.db().contacts();
         //Получаю список контактов, не связанные хотябы с одной из имеющихся групп и беру одну
-        ContactData contact = contacts.stream()
+        ContactData before = contacts.stream()
                 .filter((c) -> groups.stream()
                         .anyMatch((g)->!c.getGroups().contains(g)))
                 .iterator().next();
         //Получаю список групп не связанных с выбранным контактом и беру одну
         GroupData group = groups.stream()
-                .filter((g)->!contact.getGroups().contains(g))
+                .filter((g)->!before.getGroups().contains(g))
                 .iterator().next();
-        app.contact().addToGroup(contact, group);
+        app.contact().addToGroup(before, group);
 
+        ContactData after = app.db().contacts().stream()
+                .filter((c) -> c.getId() == before.getId())
+                .findFirst().get();
+        assertThat(after.getGroups(), equalTo(before.inGroup(group).getGroups()));
     }
 }
