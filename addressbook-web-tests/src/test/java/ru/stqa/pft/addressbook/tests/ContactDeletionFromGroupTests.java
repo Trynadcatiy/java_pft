@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -30,16 +29,27 @@ public class ContactDeletionFromGroupTests extends TestBase {
                     .withBmonth("January").withByear("1987").withAday("2").withAmonth("February").withAyear("1988")
                     .withAddress2("Test16").withPhone2("Test17").withNotes("Test18").inGroup(app.db().groups().iterator().next()));
         } else if (app.db().contacts().stream()
-                .allMatch((c)-> c.getGroups().size() == 0)){
+                .allMatch((c) -> c.getGroups().size() == 0)) {
             app.contact().addToGroup(app.db().contacts().iterator().next(), app.db().groups().iterator().next());
         }
     }
 
     @Test
     public void testContactDeletionFromGroup() {
-        ContactData before = app.db().contacts().iterator().next();
-        GroupData group = app.db().groups().iterator().next();
+        Groups groups = app.db().groups();
+        Contacts contacts = app.db().contacts();
+        ContactData before = contacts.stream()
+                .filter((c) -> c.getGroups().size() > 0)
+                .iterator().next();
+        GroupData group = groups.stream()
+                .filter((g) -> before.getGroups().contains(g))
+                .iterator().next();
         app.goTo().homePage();
         app.contact().removeFromGroup(before, group);
+
+        ContactData after = app.db().contacts().stream()
+                .filter((c) -> c.getId() == before.getId())
+                .findFirst().get();
+        assertThat(after.getGroups(), equalTo(before.outGroup(group).getGroups()));
     }
 }

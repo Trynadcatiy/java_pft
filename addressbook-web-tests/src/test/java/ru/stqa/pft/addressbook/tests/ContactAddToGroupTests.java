@@ -7,8 +7,6 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
-import java.util.Optional;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -41,12 +39,11 @@ public class ContactAddToGroupTests extends TestBase {
         Contacts contacts = app.db().contacts();
         //Получаю список контактов, не связанные хотябы с одной из имеющихся групп и беру одну
         ContactData before = contacts.stream()
-                .filter((c) -> groups.stream()
-                        .anyMatch((g)->!c.getGroups().contains(g)))
+                .filter((c) -> c.getGroups().size() < groups.size())
                 .iterator().next();
         //Получаю список групп не связанных с выбранным контактом и беру одну
         GroupData group = groups.stream()
-                .filter((g)->!before.getGroups().contains(g))
+                .filter((g) -> !before.getGroups().contains(g))
                 .iterator().next();
         app.contact().addToGroup(before, group);
 

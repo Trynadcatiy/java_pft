@@ -2,7 +2,6 @@ package ru.stqa.pft.addressbook.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -43,7 +42,7 @@ public class ContactCreationTests extends TestBase {
     public void testContactCreation(ContactData contact) {
         if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
-                app.group().create(new GroupData().withName("Test13"));
+            app.group().create(new GroupData().withName("Test13"));
             app.goTo().homePage();
         }
         Groups groups = app.db().groups();

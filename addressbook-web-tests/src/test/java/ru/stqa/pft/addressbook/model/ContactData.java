@@ -464,4 +464,9 @@ public class ContactData {
         groups.add(group);
         return this;
     }
+
+    public ContactData outGroup(GroupData group) {
+        groups.remove(group);
+        return this;
+    }
 }
