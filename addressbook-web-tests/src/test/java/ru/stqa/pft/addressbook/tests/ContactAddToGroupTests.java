@@ -45,6 +45,7 @@ public class ContactAddToGroupTests extends TestBase {
         GroupData group = groups.stream()
                 .filter((g) -> !before.getGroups().contains(g))
                 .iterator().next();
+        app.goTo().homePage();
         app.contact().addToGroup(before, group);
 
         ContactData after = app.db().contacts().stream()
