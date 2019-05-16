@@ -3,7 +3,6 @@ package ru.stqa.pft.mantis.tests;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.lanwen.verbalregex.VerbalExpression;
 import ru.stqa.pft.mantis.model.MailMessage;
 import ru.stqa.pft.mantis.model.UserData;
 
@@ -30,8 +29,9 @@ public class ResetPasswordTests extends TestBase {
             String confirmationLink = app.mail().findConfirmationLink(mailMessages, email);
             app.registration().finish(confirmationLink, password);
             assertTrue(app.newSession().login(user, password));
-            }
+        }
     }
+
     @Test
     public void testResetPassword() throws Exception {
         UserData user = app.db().users().iterator().next();
