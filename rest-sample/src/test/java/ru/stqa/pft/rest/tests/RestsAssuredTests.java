@@ -14,7 +14,7 @@ import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 
-public class RestsAssuredTests extends TestBase{
+public class RestsAssuredTests extends TestBase {
 
     @BeforeClass
     public void init() {

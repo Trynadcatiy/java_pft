@@ -47,7 +47,7 @@ public class RestsTests extends TestBase {
         return parsed.getAsJsonObject().get("issue_id").getAsInt();
     }
 
-    private Executor getExecutor(){
+    private Executor getExecutor() {
         return Executor.newInstance().auth("288f44776e7bec4bf44fdfeb1e646490", "");
     }
 }
