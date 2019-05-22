@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94a08c97-4aa7-4a77-8938-5a790ffae2fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/sandbox/.gradle/" />
     <ignored path="$PROJECT_DIR$/sandbox/build/" />
@@ -132,7 +132,7 @@
         <counts>
           <entry key="dummy" value="22" />
           <entry key="gradle" value="325" />
-          <entry key="java" value="28527" />
+          <entry key="java" value="28528" />
           <entry key="json" value="8" />
           <entry key="php" value="168" />
           <entry key="properties" value="335" />
@@ -143,7 +143,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="325" />
-          <entry key="JAVA" value="28488" />
+          <entry key="JAVA" value="28489" />
           <entry key="PLAIN_TEXT" value="9503" />
           <entry key="Properties" value="335" />
           <entry key="Scratch" value="60" />
@@ -158,7 +158,7 @@
           <entry key="csv" value="2" />
           <entry key="gradle" value="32" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="614" />
+          <entry key="java" value="615" />
           <entry key="json" value="11" />
           <entry key="log" value="5" />
           <entry key="php" value="5" />
@@ -173,7 +173,7 @@
           <entry key="CLASS" value="3" />
           <entry key="CSV" value="1" />
           <entry key="Groovy" value="32" />
-          <entry key="JAVA" value="613" />
+          <entry key="JAVA" value="614" />
           <entry key="JSON" value="6" />
           <entry key="PHP" value="3" />
           <entry key="PLAIN_TEXT" value="11" />
@@ -187,15 +187,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/github-sample/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -217,11 +208,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sandbox/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -2363,7 +2363,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionFromGroupTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/Groups.java" />
@@ -2414,6 +2413,7 @@
         <option value="$PROJECT_DIR$/github-sample/build.gradle" />
         <option value="$PROJECT_DIR$/github-sample/src/test/java/ru/stqa/pft/github/GithubTests.java" />
         <option value="$PROJECT_DIR$/sandbox/build.gradle" />
+        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java" />
       </list>
     </option>
   </component>
@@ -2470,11 +2470,25 @@
           <expand>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-tests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
               <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="test-results" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
@@ -2516,7 +2530,7 @@
     <property name="SearchEverywhereHistoryKey" value="getProperty&#9;PSI&#9;JAVA://com.mysql.cj.protocol.Protocol.GetProfilerEventHandlerInstanceFunction&#10;Please enter your login and password&#9;null&#9;null&#10;isElementPresent&#9;ACTION&#9;null&#10;firefox&#9;FILE&#9;jar://C:/Users/defaultuser/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/3.141.59/a99f2fe2a42747ed9809d4f62f51a9e1b336dde8/selenium-firefox-driver-3.141.59.jar!/org/openqa/selenium/firefox/FirefoxDriverLogLevel.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558529953517" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558530805840" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML&#10;JSON" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
@@ -2795,14 +2809,7 @@
       <workItem from="1558016521250" duration="7120000" />
       <workItem from="1558083664659" duration="1784000" />
       <workItem from="1558332126784" duration="17388000" />
-      <workItem from="1558528322282" duration="1635000" />
-    </task>
-    <task id="LOCAL-00077" summary="Добавлена параметризация тестов создания котактов и групп по файлам json">
-      <created>1553528983237</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1553528983237</updated>
+      <workItem from="1558528322282" duration="2446000" />
     </task>
     <task id="LOCAL-00078" summary="Добавлено автоматическое закрытие файлов со списком групп">
       <created>1554380644259</created>
@@ -3140,13 +3147,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558529102303</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Сборка sandbox настроена для запуска с jenkins">
+      <created>1558529996958</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1558529996958</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestsAssuredTests - 2019.05.20 at 12h 20m 46s.xml">
-      <configuration name="RestsAssuredTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RestsAssuredTests - 2019.05.20 at 12h 22m 13s.xml">
       <configuration name="RestsAssuredTests" configurationId="TestNG" />
     </history-entry>
@@ -3174,9 +3185,12 @@
     <history-entry file="sandbox_[test]_(1) - 2019.05.22 at 15h 40m 55s.xml">
       <configuration name="sandbox [test] (1)" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="sandbox_[test]_(1) - 2019.05.22 at 16h 03m 45s.xml">
+      <configuration name="sandbox [test] (1)" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="465889000" />
+    <option name="totallyTimeSpent" value="466700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3200,7 +3214,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45828697" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45828697" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48387095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -3210,7 +3224,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.2769744" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32703003" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49946696" visible="true" weight="0.269188" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49946696" weight="0.269188" />
       <window_info anchor="bottom" id="Extract Method" order="13" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -3344,13 +3358,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/UserHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -3682,6 +3689,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/SquareTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
