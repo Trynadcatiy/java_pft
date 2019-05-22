@@ -2492,7 +2492,7 @@
     <property name="SearchEverywhereHistoryKey" value="getProperty&#9;PSI&#9;JAVA://com.mysql.cj.protocol.Protocol.GetProfilerEventHandlerInstanceFunction&#10;Please enter your login and password&#9;null&#9;null&#10;isElementPresent&#9;ACTION&#9;null&#10;firefox&#9;FILE&#9;jar://C:/Users/defaultuser/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-firefox-driver/3.141.59/a99f2fe2a42747ed9809d4f62f51a9e1b336dde8/selenium-firefox-driver-3.141.59.jar!/org/openqa/selenium/firefox/FirefoxDriverLogLevel.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558528815896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558529029760" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML&#10;JSON" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
@@ -3120,9 +3120,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestsAssuredTests - 2019.05.20 at 12h 20m 01s.xml">
-      <configuration name="RestsAssuredTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="RestsAssuredTests - 2019.05.20 at 12h 20m 46s.xml">
       <configuration name="RestsAssuredTests" configurationId="TestNG" />
     </history-entry>
@@ -3149,6 +3146,9 @@
     </history-entry>
     <history-entry file="GithubTests - 2019.05.21 at 12h 42m 22s.xml">
       <configuration name="GithubTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="sandbox_[test]_(1) - 2019.05.22 at 15h 40m 55s.xml">
+      <configuration name="sandbox [test] (1)" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
